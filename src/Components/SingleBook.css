@@ -1,0 +1,7 @@
+.cardactive {
+    border: 3px solid red
+}
+
+.cardnotactive {
+    border: none
+}
