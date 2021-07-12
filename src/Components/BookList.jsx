@@ -1,33 +1,30 @@
 import React, { Component } from "react";
 import SingleBook from "./SingleBook";
-import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { CardGroup, Container, Form, Button, Row, Col } from "react-bootstrap";
 
 class BookList extends Component {
-  state = {
-   
-    query: "",
-    books: [],
   
+  state = {   
+    query: "",
+    books: []  
   };
 
   searchBook = (e) => {
-    e.preventDefault()
+    e.preventDefault()   
     const filteredBooks = this.props.books.filter((book) =>
       book.title.toLowerCase().includes(this.state.query.toLowerCase())
     );
-    this.setState({ 
-       
-            books: filteredBooks
-        
+    this.setState({        
+            books: filteredBooks        
          });
   };
 
   render() {
     return (
-      <Container className="mt-3">
+      <Container className="m-auto">
         <Form>
           <Form.Row>
-            <Col md={4}>
+            <Col md={3}>
               <Form.Control
                 placeholder="Enter keyword"
                 value={this.state.query}
@@ -46,23 +43,27 @@ class BookList extends Component {
           </Form.Row>
         </Form>
 
+        <h4 className="my-5"
+        >Search Results</h4>
         <Row className="my-5">
-          <h4>Search Result</h4>
+          
           { this.state.books.map((book) => (
               <Col xs={12} sm={4} md={3} lg={2}>
-                <SingleBook book={book} />
+                <SingleBook key={book.asin} book={book} />
               </Col>
             ))}
         </Row>
 
-        <h4 className="mb-3 mt-3">{this.props.books[0].category} </h4>
+        <h4 className="my-3"> {this.props.books[0].category} </h4>
         <Row>
-          {this.props.books.slice(0, 12).map((book) => (
-            <Col md={2}>
-              <SingleBook book={book} />
-            </Col>
+          <Col>
+          <CardGroup>
+          {this.props.books.slice(0, 10).map((book) => (              
+              <SingleBook key={book.asin} book={book} />            
           ))}
-        </Row>
+          </CardGroup>
+          </Col>
+          </Row>
       </Container>
     );
   }

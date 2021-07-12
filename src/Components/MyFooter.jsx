@@ -1,4 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap";
+import "./MyFooter.css";
 
 const MyFooter = () => (
     <Container fluid style={{background: "rgb(233, 236,239)"}}>

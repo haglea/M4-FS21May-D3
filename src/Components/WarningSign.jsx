@@ -1,11 +1,9 @@
-import { Alert } from "react-bootstrap"
+import { Alert } from "react-bootstrap";
 
-const WarningSign = (props) => {
-    return (
+const WarningSign = (props) => (
     <Alert variant="danger">
-     {props.text}
-    </Alert>
-    )
-}
+    {props.text}
+   </Alert>
+)
 
 export default WarningSign
