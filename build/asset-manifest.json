@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/M4-FS21May-D3/static/css/main.f5bb4384.chunk.css",
+    "main.js": "/M4-FS21May-D3/static/js/main.55ccfb48.chunk.js",
+    "main.js.map": "/M4-FS21May-D3/static/js/main.55ccfb48.chunk.js.map",
+    "runtime-main.js": "/M4-FS21May-D3/static/js/runtime-main.86b1d839.js",
+    "runtime-main.js.map": "/M4-FS21May-D3/static/js/runtime-main.86b1d839.js.map",
+    "static/css/2.081f420c.chunk.css": "/M4-FS21May-D3/static/css/2.081f420c.chunk.css",
+    "static/js/2.83a9086c.chunk.js": "/M4-FS21May-D3/static/js/2.83a9086c.chunk.js",
+    "static/js/2.83a9086c.chunk.js.map": "/M4-FS21May-D3/static/js/2.83a9086c.chunk.js.map",
+    "index.html": "/M4-FS21May-D3/index.html",
+    "static/css/2.081f420c.chunk.css.map": "/M4-FS21May-D3/static/css/2.081f420c.chunk.css.map",
+    "static/css/main.f5bb4384.chunk.css.map": "/M4-FS21May-D3/static/css/main.f5bb4384.chunk.css.map",
+    "static/js/2.83a9086c.chunk.js.LICENSE.txt": "/M4-FS21May-D3/static/js/2.83a9086c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86b1d839.js",
+    "static/css/2.081f420c.chunk.css",
+    "static/js/2.83a9086c.chunk.js",
+    "static/css/main.f5bb4384.chunk.css",
+    "static/js/main.55ccfb48.chunk.js"
+  ]
+}
